@@ -1,0 +1,271 @@
+*{
+    margin:0  ;  
+    padding: 0 ;
+} 
+@font-face {
+    font-family: mary;
+    src: url("fonts/A-Sadeh.ttf") format("ttf");
+}
+
+body{
+    background-color: #dfdfdf;
+}
+body.html{
+    font-family: "mary";
+    font-size: 15px;
+}
+
+li{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width:100% ;
+}
+
+header .top-access a{
+    font-size: 17px;
+    padding: 20px 7px;
+}
+
+header .top-menu{
+    z-index: 10;
+    height: 57px;
+    position: relative;
+}
+header .main-menu ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header .main-menu ul li{
+    display: inline-block;
+    margin: 4px;
+    position: relative;
+}
+
+header .main-menu ul li a{
+    display: inline-block;
+    padding: 15px 5px;
+    color: #eee;
+    position: relative;
+}
+
+header .main-menu ul li > ul > li > a{
+    position: relative;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+header .main-menu ul li > ul > li > a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    top: 13px;
+    right: 0;
+    background-color: #888;
+    transition: all 0.5s ease;
+}
+
+header .main-menu ul li > ul > li > a:hover{
+    right: 8px;
+    transition: all 0.5s ease;
+}
+
+header .main-menu ul li > ul > li > a:hover::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    transition: all 0.5s ease;
+}
+
+header .main-menu ul li ul{
+    position: absolute;
+    right: 0;
+    top: 55px;
+    width: 200px;
+    background-color: #fff;
+    text-align: right;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+
+header .main-menu ul > li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+    padding: 8px;
+
+}
+
+header .main-menu ul li ul li{
+    display:block ; 
+}
+
+header .main-menu ul li ul li a{
+    color: #717171;
+    padding: 5px 10px;
+    display: block;
+}
+
+header .main-menu ul li > ul > li > ul{
+    right: 100%;
+    top: -12px;
+}
+
+
+header .slider-box{
+    margin-top: -57px;
+    position: relative;
+}
+
+header .slider-box::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000096;
+}
+header .slider-box .carousel-caption{
+    top: 40%;
+    z-index: 1;
+    font-family: mary;
+    font-size: 20px;
+}
+.prodact-item figure{
+    height: 210px;
+}
+
+.prodact-item figure img{
+    height: 210px;
+    object-fit: contain;
+    }
+
+.prodact-item figure figcaption{
+    top: 0;
+    right: 0;
+    background-color: #e4e1e185;
+    padding-top: 80px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.prodact-item figure:hover figcaption{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.prodact-item figure figcaption ul li a{
+    width: 40px;
+    height: 40px;
+    line-height: 43px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #212121;
+    transition: all 0.3s ease;
+}
+
+.prodact-item figure figcaption ul li a:hover{
+    background-color: #27b1b6c2;
+    transition: all 0.3s ease; 
+}
+
+.prodact-item h5{
+       line-height: 36px;
+      font-size: 14px;
+       height: 55px;
+       color: #414141 ;
+
+}
+.prodact-item p{
+     color:#717171;
+      font-size: 12px;
+      height: 37px;
+}
+.prodact-item .product-rate i{
+    font-size: 10px;
+}
+.prodact-item .product-price{
+        font-size: 13px;
+}
+.tooltip-inner{
+      font-family: mary;
+
+}
+
+.index-products .nav-pills .nav-link.active,.index-product .nav-pills .show > .nav-link {
+    color: #222;
+    background-color: transparent;
+
+
+}
+.index-products .nav-link{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #999;
+}
+.home_ad{
+    padding-top: 20px;
+}
+
+.home_ad_right{
+    width: 75%;
+    height: 300px;
+    float: right;
+    padding: 6px;
+}
+
+.home_ad_right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+
+}
+
+.home_ad_left{
+    width: 25%;
+    height: 300px;
+    float: left;
+    padding: 6px;
+}
+
+.home_ad_left img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.home_pishnahad_logo{
+    float: right;
+    width: 50%;
+    height: 350px;
+    padding: 6px;
+}
+
+.home_pishnahad_logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+footer{
+    color: #000000;
+    font-size: 16px;
+
+}
+
+footer .social-ul{
+    color:#87bab5 ;
+    font-size: 17px;
+}
